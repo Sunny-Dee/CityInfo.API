@@ -29,13 +29,6 @@ namespace CityInfo.API.Controllers
         {
             try
             {
-                //var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
-
-                //if (city == null)
-                //{
-                //    _logger.LogInformation($"City with id {cityId} was not found when accessing points of interest.");
-                //    return NotFound();
-                //}
 
                 if (!_cityInfoRepository.CityExists(cityId))
                 {
